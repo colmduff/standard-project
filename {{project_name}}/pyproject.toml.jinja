@@ -1,0 +1,22 @@
+[tool.poetry]
+package-mode = false  # Explicitly disable packaging
+name = "{{project_name}}"
+version = "0.1.0"
+description = "A Python project generated with Copier."
+authors = ["{{ author_name }} <{{author_email}}>"]
+
+[tool.poetry.dependencies]
+# Core dependencies
+python = "^3.10"
+pathlib = "*"
+
+[tool.poetry.dev-dependencies]
+# Development dependencies
+pytest = "*"
+black = "*"
+isort = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
